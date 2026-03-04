@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتجر الأخضر | إدامة</title>
+    <style>
+        :root { --uae-green: #166534; --uae-gold: #c5a059; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; }
+        
+        header { background: var(--uae-green); color: white; padding: 25px; text-align: center; }
+        
+        .shop-container { max-width: 1100px; margin: 30px auto; padding: 0 15px; }
+        
+        /* تصميم شبكة المنتجات */
+        .products-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 25px; 
+        }
+        
+        .product-card { 
+            background: white; border: 1px solid #eee; border-radius: 10px; 
+            padding: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .product-img { background: #e8f5e9; height: 150px; border-radius: 8px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; color: var(--uae-green); font-weight: bold; }
+        
+        .price { color: var(--uae-green); font-size: 1.2rem; font-weight: bold; margin: 10px 0; }
+        
+        .buy-btn { 
+            background: var(--uae-green); color: white; border: none; 
+            padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 100%; 
+        }
+        .buy-btn:hover { background: #14532d; }
+
+        @media (max-width: 500px) {
+            .products-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>المتجر الأخضر - بدائل مستدامة</h1>
+    <p>منتجات صديقة للبيئة تدعم رؤية الإمارات 2049</p>
+</header>
+
+<div class="shop-container">
+    <div class="products-grid">
+        <div class="product-card">
+            <div class="product-img">ماصات (Straws) ورقية</div>
+            <h3>ماصات قابلة للتحلل</h3>
+            <p>بديل مثالي للبلاستيك، مصنوعة من ورق معاد تدويره.</p>
+            <div class="price">15 درهم</div>
+            <button class="buy-btn">أضف للسلة</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img">أكياس قماشية</div>
+            <h3>حقيبة تسوق مستدامة</h3>
+            <p>قوية، متينة، وتغنيك عن مئات الأكياس البلاستيكية.</p>
+            <div class="price">25 درهم</div>
+            <button class="buy-btn">أضف للسلة</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img">أدوات مائدة خشبية</div>
+            <h3>طقم ملاعق وشوك خشبية</h3>
+            <p>سهلة التحلل في التربة وآمنة للاستخدام الغذائي.</p>
+            <div class="price">30 درهم</div>
+            <button class="buy-btn">أضف للسلة</button>
+        </div>
+    </div>
+    
+    <p style="text-align: center; margin-top: 30px;">
+        <a href="/" style="color: var(--uae-green); text-decoration: none;">← العودة للرئيسية</a>
+    </p>
+</div>
+
+</body>
+</html>
